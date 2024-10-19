@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000; /* Fondo negro estilo consola */
+    font-family: 'Courier New', monospace; /* Fuente monoespaciada */
+    color: #a285d1; /* Texto lila */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.console {
+    background-color: black;
+    padding: 20px;
+    border: 2px solid #a285d1;
+    width: 80%;
+    max-width: 800px;
+    color: #a285d1;
+}
+
+.console p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+.meme {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    color: #a285d1;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #a285d1;
+    width: 0;
+    animation: typing 4s steps(40) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-right-color: #a285d1;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+}
